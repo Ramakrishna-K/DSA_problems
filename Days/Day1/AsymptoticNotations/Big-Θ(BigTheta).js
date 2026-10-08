@@ -1,12 +1,18 @@
-function findNumber(arr, target) {
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] === target) {
-            return i;
-        }
-    }
-    return -1;
+// function findNumber(arr, target) {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] === target) {
+//             return i;
+//         }
+//     }
+//     return -1;
+// }
+
+// let numbers = [10, 20, 30, 40, 50];
+
+// console.log(findNumber(numbers, 30));
+
+
+function findNumber(arr, target){
+    return arr.indexOf(target);
 }
-
-let numbers = [10, 20, 30, 40, 50];
-
-console.log(findNumber(numbers, 30));
+console.log(findNumber([10, 20, 30, 40, 50], 30))
