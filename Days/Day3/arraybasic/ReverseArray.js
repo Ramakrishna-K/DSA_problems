@@ -26,7 +26,8 @@ console.log(arr1);
 
 // this code is the small way code 
 
-let arr2 = [1, 2, 3, 4, 5];
+// 1)
+    let arr2 = [1, 2, 3, 4, 5];
 let start = 0;
 let end = arr2.length - 1;
 while(start < end){
@@ -36,3 +37,11 @@ while(start < end){
     end --;
 }
 console.log(arr2)
+
+// 2)
+let arr3 = [1, 2, 3, 4, 5], start = 0, end = arr3.length - 1;
+
+while(start < end){
+    [arr3[start++], arr3[end--]] = [arr3[start], arr3[end]]
+}
+console.log(arr3)
