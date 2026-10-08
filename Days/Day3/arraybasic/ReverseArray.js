@@ -8,18 +8,31 @@ arr1.reverse();
 console.log(arr1);
 
 // Method 2: Two Pointer Technique
+// let arr2 = [1, 2, 3, 4, 5];
+
+// let start = 0;
+// let end = arr2.length - 1;
+
+// while (start < end) {
+//     let temp = arr2[start];
+//     arr2[start] = arr2[end];
+//     arr2[end] = temp;
+
+//     start++;
+//     end--;
+// }
+
+// console.log(arr2);
+
+// this code is the small way code 
+
 let arr2 = [1, 2, 3, 4, 5];
-
 let start = 0;
-g
+let end = arr2.length - 1;
+while(start < end){
+    [arr2[start], arr2[end]] = [arr2[end], arr2[start]];
 
-while (start < end) {
-    let temp = arr2[start];
-    arr2[start] = arr2[end];
-    arr2[end] = temp;
-
-    start++;
-    end--;
+    start ++ ;
+    end --;
 }
-
-console.log(arr2);
+console.log(arr2)
