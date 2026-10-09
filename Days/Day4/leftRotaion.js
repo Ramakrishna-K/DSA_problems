@@ -20,14 +20,23 @@ function rotateRight(arr, k) {
 console.log(rotateRight([1,2,3,4,5],2));
 
 
+// let arr = [1, 2, 3, 4, 5];
+
+// let first = arr[0]; 
+
+// for (let i = 0; i < arr.length-1; i++) {
+//     arr[i] = arr[i + 1];        // Shift elements right
+// }
+
+// arr[arr.length-1] = first;                  // Place last element at front
+
+// console.log(arr);
+
 let arr = [1, 2, 3, 4, 5];
 
-let first = arr[0]; 
+arr.push(arr.splice(1, 2)[0]);
 
-for (let i = 0; i < arr.length-1; i++) {
-    arr[i] = arr[i + 1];        // Shift elements right
-}
+console.log(arr)
 
-arr[arr.length-1] = first;                  // Place last element at front
 
-console.log(arr);
+
