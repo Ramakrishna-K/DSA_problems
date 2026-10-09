@@ -28,6 +28,6 @@ for (let i = 0; i < arr.length-1; i++) {
     arr[i] = arr[i + 1];        // Shift elements right
 }
 
-arr[arr.length-1] = temp;                  // Place last element at front
+arr[arr.length-1] = first;                  // Place last element at front
 
 console.log(arr);
